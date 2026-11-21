@@ -1,0 +1,215 @@
+{
+  "repositories": 7,
+  "mean_detection_precision": 0.659,
+  "mean_strict_detection_precision": 0.314,
+  "mean_detection_recall": 0.786,
+  "mean_detection_f1": 0.455,
+  "root_cause_identification_rate": 1.0,
+  "mean_cascade_accuracy": 0.571,
+  "mean_fix_verification_rate": 0.286,
+  "mean_evidence_consistency": 1.0,
+  "total_incorrect_hypotheses": 0,
+  "per_repository": [
+    {
+      "repository": "cascading-failure-project",
+      "detection_precision": 0.444,
+      "strict_detection_precision": 0.111,
+      "detection_recall": 1.0,
+      "detection_f1": 0.444,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 1.0,
+      "fix_verification_rate": 1.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-A7D1939D64",
+        "assessment": "NOT READY",
+        "expected_file": "src/config.py",
+        "matched_root_chains": 2,
+        "type_matches": 2,
+        "findings": 9,
+        "chains": 3,
+        "expected_types": [
+          "missingconfiguration",
+          "missingenvironmentvariable"
+        ]
+      }
+    },
+    {
+      "repository": "configuration-error-project",
+      "detection_precision": 0.667,
+      "strict_detection_precision": 0.167,
+      "detection_recall": 1.0,
+      "detection_f1": 0.533,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 1.0,
+      "fix_verification_rate": 0.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-A7DF35399B",
+        "assessment": "NOT READY",
+        "expected_file": "src/database.py",
+        "matched_root_chains": 2,
+        "type_matches": 2,
+        "findings": 6,
+        "chains": 2,
+        "expected_types": [
+          "missingconfiguration",
+          "missingenvironmentvariable"
+        ]
+      }
+    },
+    {
+      "repository": "data-error-project",
+      "detection_precision": 0.667,
+      "strict_detection_precision": 0.333,
+      "detection_recall": 0.333,
+      "detection_f1": 0.364,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 0.0,
+      "fix_verification_rate": 0.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-5001E7A26A",
+        "assessment": "NOT READY",
+        "expected_file": "src/processor.py",
+        "matched_root_chains": 3,
+        "type_matches": 3,
+        "findings": 3,
+        "chains": 3,
+        "expected_types": [
+          "fail",
+          "error",
+          "typeerror",
+          "dynamicboundaryfailure"
+        ]
+      }
+    },
+    {
+      "repository": "dependency-error-project",
+      "detection_precision": 0.667,
+      "strict_detection_precision": 0.167,
+      "detection_recall": 1.0,
+      "detection_f1": 0.533,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 1.0,
+      "fix_verification_rate": 1.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-28A01D01E4",
+        "assessment": "NOT READY",
+        "expected_file": "src/service.py",
+        "matched_root_chains": 1,
+        "type_matches": 2,
+        "findings": 6,
+        "chains": 2,
+        "expected_types": [
+          "missingdependency",
+          "undeclareddependency",
+          "modulenotfounderror"
+        ]
+      }
+    },
+    {
+      "repository": "integration-error-project",
+      "detection_precision": 0.5,
+      "strict_detection_precision": 0.5,
+      "detection_recall": 0.5,
+      "detection_f1": 0.333,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 0.0,
+      "fix_verification_rate": 0.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-0AE6A723FF",
+        "assessment": "NOT READY",
+        "expected_file": "src/database.py",
+        "matched_root_chains": 1,
+        "type_matches": 4,
+        "findings": 4,
+        "chains": 4,
+        "expected_types": [
+          "fail",
+          "error",
+          "connectionerror"
+        ]
+      }
+    },
+    {
+      "repository": "runtime-error-project",
+      "detection_precision": 0.667,
+      "strict_detection_precision": 0.667,
+      "detection_recall": 0.667,
+      "detection_f1": 0.364,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 0.0,
+      "fix_verification_rate": 0.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-80D5AF5AC0",
+        "assessment": "NOT READY",
+        "expected_file": "src/divider.py",
+        "matched_root_chains": 3,
+        "type_matches": 3,
+        "findings": 3,
+        "chains": 3,
+        "expected_types": [
+          "fail",
+          "error",
+          "dynamicboundaryfailure",
+          "logic error"
+        ]
+      }
+    },
+    {
+      "repository": "syntax-error-project",
+      "detection_precision": 1.0,
+      "strict_detection_precision": 0.25,
+      "detection_recall": 1.0,
+      "detection_f1": 0.615,
+      "root_cause_identified": true,
+      "root_cause_accuracy": 1.0,
+      "false_root_cause_rate": 0.0,
+      "cascade_accuracy": 1.0,
+      "fix_verification_rate": 0.0,
+      "unnecessary_tool_calls": 0,
+      "incorrect_hypotheses": 0,
+      "evidence_consistency": 1.0,
+      "details": {
+        "analysis_id": "RUN-4DB8F58542",
+        "assessment": "NOT READY",
+        "expected_file": "src/calculator.py",
+        "matched_root_chains": 1,
+        "type_matches": 1,
+        "findings": 4,
+        "chains": 1,
+        "expected_types": [
+          "syntaxerror"
+        ]
+      }
+    }
+  ]
+}

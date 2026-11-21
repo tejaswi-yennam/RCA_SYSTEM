@@ -1,0 +1,14 @@
+{
+  "name": "dependency-error-project",
+  "expected_root_cause_types": [
+    "MissingDependency",
+    "UndeclaredDependency",
+    "ModuleNotFoundError"
+  ],
+  "expected_categories": [
+    "Dependency Error"
+  ],
+  "expected_file": "src/service.py",
+  "expected_symptom_count": 1,
+  "description": "Import of an uninstalled, undeclared package fails at import time."
+}

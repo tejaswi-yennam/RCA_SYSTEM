@@ -1,0 +1,14 @@
+{
+  "name": "configuration-error-project",
+  "expected_root_cause_types": [
+    "MissingConfiguration",
+    "MissingEnvironmentVariable"
+  ],
+  "expected_categories": [
+    "Configuration Error"
+  ],
+  "expected_file": "src/database.py",
+  "expected_env_var": "DB_URL",
+  "expected_symptom_count": 1,
+  "description": "Required DB_URL environment variable is never defined."
+}

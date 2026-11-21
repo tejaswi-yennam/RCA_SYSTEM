@@ -1,0 +1,17 @@
+{
+  "name": "data-error-project",
+  "expected_root_cause_types": [
+    "FAIL",
+    "ERROR",
+    "TypeError",
+    "DynamicBoundaryFailure"
+  ],
+  "expected_categories": [
+    "Data Error",
+    "Type Error",
+    "Test Failure"
+  ],
+  "expected_file": "src/processor.py",
+  "expected_symptom_count": 1,
+  "description": "String input multiplied as if numeric; missing input validation."
+}

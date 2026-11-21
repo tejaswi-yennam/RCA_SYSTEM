@@ -1,0 +1,17 @@
+{
+  "name": "runtime-error-project",
+  "expected_root_cause_types": [
+    "FAIL",
+    "ERROR",
+    "DynamicBoundaryFailure",
+    "Logic Error"
+  ],
+  "expected_categories": [
+    "Runtime Error",
+    "Test Failure",
+    "Logic Error"
+  ],
+  "expected_file": "src/divider.py",
+  "expected_symptom_count": 1,
+  "description": "Unhandled division by zero in divide()."
+}

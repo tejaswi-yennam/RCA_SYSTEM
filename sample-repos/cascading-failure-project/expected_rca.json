@@ -1,0 +1,14 @@
+{
+  "name": "cascading-failure-project",
+  "expected_root_cause_types": [
+    "MissingConfiguration",
+    "MissingEnvironmentVariable"
+  ],
+  "expected_categories": [
+    "Configuration Error"
+  ],
+  "expected_file": "src/config.py",
+  "expected_env_var": "DATABASE_URL",
+  "expected_symptom_count": 2,
+  "description": "One missing env var causes two test failures through database -> service chain."
+}

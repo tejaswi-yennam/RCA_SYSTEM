@@ -1,0 +1,12 @@
+# Autonomous Repository Testing & RCA System
+# Core web/API dependencies (everything else uses the Python standard library).
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.27,<1.0
+pydantic>=2.6,<3.0
+httpx>=0.27,<1.0
+
+# Optional: install these for richer deterministic analysis if desired.
+# The system degrades gracefully when they are absent.
+# pylint>=3.0
+# mypy>=1.8
+# bandit>=1.7

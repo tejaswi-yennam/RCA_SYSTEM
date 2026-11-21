@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autonomous Repository Testing &amp; RCA</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<header>
+  <h1>Autonomous Repository Testing &amp; Root Cause Analysis</h1>
+  <p class="subtitle">Hybrid deterministic + AI-agent evidence pipeline</p>
+</header>
+
+<main>
+  <section class="card" id="input-card">
+    <h2>1. Provide a repository</h2>
+    <div class="row">
+      <input id="source" type="text" placeholder="Local path, .zip/.tar.gz, or Git URL" />
+      <input id="name" type="text" placeholder="Optional name" />
+      <button id="start-btn">Start analysis</button>
+    </div>
+    <label class="upload">Or upload an archive:
+      <input id="upload" type="file" accept=".zip,.tar,.tar.gz,.tgz,.tar.bz2" />
+      <button id="upload-btn">Upload</button>
+    </label>
+    <p id="input-msg" class="msg"></p>
+  </section>
+
+  <section class="card" id="progress-card" hidden>
+    <h2>2. Analysis progress</h2>
+    <div class="progress"><div id="progress-bar"></div></div>
+    <div class="meta">
+      <span id="run-id"></span>
+      <span id="stage"></span>
+      <span id="status-badge" class="badge"></span>
+    </div>
+    <pre id="live-log"></pre>
+  </section>
+
+  <section class="card" id="results-card" hidden>
+    <h2>3. Results</h2>
+    <div id="summary" class="summary-grid"></div>
+    <nav class="tabs">
+      <button data-tab="components" class="active">Components</button>
+      <button data-tab="tests">Tests</button>
+      <button data-tab="issues">Issues</button>
+      <button data-tab="rca">RCA</button>
+      <button data-tab="graph">Graph</button>
+      <button data-tab="fixes">Fixes</button>
+      <button data-tab="coverage">Coverage</button>
+      <button data-tab="logs">Logs</button>
+    </nav>
+    <div id="tab-components" class="tab-panel active"></div>
+    <div id="tab-tests" class="tab-panel"></div>
+    <div id="tab-issues" class="tab-panel"></div>
+    <div id="tab-rca" class="tab-panel"></div>
+    <div id="tab-graph" class="tab-panel"></div>
+    <div id="tab-fixes" class="tab-panel"></div>
+    <div id="tab-coverage" class="tab-panel"></div>
+    <div id="tab-logs" class="tab-panel"></div>
+    <div class="report-links">
+      <a id="md-link" href="#" download>Download Markdown report</a>
+      <a id="json-link" href="#" download>Download JSON report</a>
+    </div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

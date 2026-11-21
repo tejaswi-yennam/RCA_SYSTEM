@@ -1,0 +1,12 @@
+{
+  "name": "syntax-error-project",
+  "expected_root_cause_types": [
+    "SyntaxError"
+  ],
+  "expected_categories": [
+    "Syntax Error"
+  ],
+  "expected_file": "src/calculator.py",
+  "expected_symptom_count": 1,
+  "description": "Missing colon in function definition prevents module import."
+}
